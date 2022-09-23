@@ -15,9 +15,13 @@
     //    console.log(i);
     //}
 
-    //logic to log fizz for multiples of 3//
+
     for (let i = 1; i <= answer; i++) {
-        if (i % 3 === 0) {
+    //logic to log fizzbuzz if multiples of both 5 and 3//
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+    //logic to log fizz for multiples of 3//
+        } else if (i % 3 === 0) {
             console.log("Fizz");
     //logic to log buzz if multiples of 5//        
         } else if (i % 5 === 0){
