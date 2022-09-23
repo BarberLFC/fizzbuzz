@@ -7,12 +7,21 @@
 <body>
   <script>
 
-// the below allows input from the user//
+    // the below allows input from the user//
     let answer = parseInt(prompt("enter the number to fizzbuzz: "))
 
     //This calcs the number to post and logs to console//
-    for (let i = 1; i <=answer; i++) {
-        console.log(i);
+    //for (let i = 1; i <=answer; i++) {
+    //    console.log(i);
+    //}
+
+    //logic to log fizz for multiples of 3//
+    for (let i = 1; i <= answer; i++) {
+        if (i % 3 === 0) {
+            console.log("Fizz");
+        } else {
+            console.log(i);
+        }
     }
   </script>
 </body>
